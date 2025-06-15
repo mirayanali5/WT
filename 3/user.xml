@@ -3,7 +3,6 @@
 <user id="1"> 
 <name>User 1</name> 
 <email>user1@example.com</email> 
-<address>hahahah</address> 
 </user> 
 <user id="2"> 
 <name>User 2</name> 
