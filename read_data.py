@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET 
 def get_user_details(user_id): 
-    tree = ET.parse(r'C:\Users\motas\OneDrive\Desktop\SEM 6\Web Technology Lab\q3\user.xml') 
+    tree = ET.parse(r'C:\Users\') 
     root = tree.getroot() 
     for user in root.findall('user'): 
         if user.get('id') == user_id: 
