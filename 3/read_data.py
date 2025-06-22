@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET 
+
 def get_user_details(user_id): 
     tree = ET.parse(r'C:\Users\miray\OneDrive\Desktop\WT-Lab\3\user.xml') 
     root = tree.getroot() 
@@ -8,5 +9,6 @@ def get_user_details(user_id):
             email = user.find('email').text 
             return f"Name: {name}, Email: {email}" 
     return "User not found" 
+
 user_id = input("Enter a user ID: ") 
 print(get_user_details(user_id)) 
