@@ -46,3 +46,37 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+
+// ALTERNATE WAY
+// import java.io.IOException;
+// import java.io.PrintWriter;
+// import javax.servlet.ServletException;
+// import javax.servlet.http.HttpServlet;
+// import javax.servlet.http.HttpServletRequest;
+// import javax.servlet.http.HttpServletResponse;
+
+// public class LoginServlet extends HttpServlet {
+
+//     @Override
+//     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+//             throws ServletException, IOException {
+
+//         response.setContentType("text/html");
+//         PrintWriter out = response.getWriter();
+
+//         String username = request.getParameter("username");
+//         String password = request.getParameter("password");
+
+//         String validUsername = getServletConfig().getInitParameter("u");
+//         String validPassword = getServletConfig().getInitParameter("p");
+
+//         out.println("<html><body><center><h3>");
+//         if (validUsername != null && validPassword != null &&
+//             validUsername.equals(username) && validPassword.equals(password)) {
+//             out.println("Authorized user");
+//         } else {
+//             out.println("Unauthorized user");
+//         }
+//         out.println("</h3></center></body></html>");
+//     }
+// }
